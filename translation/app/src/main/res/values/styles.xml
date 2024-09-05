@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
+
+    <!-- Button styles -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/colorButtonText</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="SpeakButtonStyle" parent="ButtonStyle">
+        <item name="android:background">@drawable/rounded_button_green</item>
+    </style>
+
+    <style name="ListenButtonStyle" parent="ButtonStyle">
+        <item name="android:background">@drawable/rounded_button_pink</item>
+    </style>
+
+    <style name="ClearButtonStyle" parent="ButtonStyle">
+        <item name="android:background">@drawable/rounded_button_purple</item>
+    </style>
+
+    <!-- EditText styles -->
+    <style name="EditTextStyle">
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@drawable/rounded_edittext</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Add styles for the Tamil Language Button if needed -->
+    <style name="LanguageButtonStyle" parent="ButtonStyle">
+        <item name="android:background">@drawable/rounded_button_orange</item>
+        <item name="android:textColor">@color/colorButtonText</item>
+    </style>
+
+</resources>

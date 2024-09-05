@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Caption TextView -->
+        <TextView
+            android:id="@+id/captionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAD_exe06"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter text here"
+            style="@style/EditTextStyle" />
+
+        <!-- TextView for displaying recognized speech -->
+        <TextView
+            android:id="@+id/recognizedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recognized Speech will appear here"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Spinner for Language Selection -->
+        <Spinner
+            android:id="@+id/languageSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Horizontal LinearLayout for speak and listen buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/buttonSpeak"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Speak"
+                style="@style/SpeakButtonStyle"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonListen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Listen"
+                style="@style/ListenButtonStyle"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            style="@style/ClearButtonStyle"
+            android:layout_marginTop="16dp" />
+
+        <!-- Footer TextView positioned at the bottom -->
+        <TextView
+            android:id="@+id/footer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BY YOGESWARAN S"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="cursive"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="end"/>
+    </LinearLayout>
+
+</ScrollView>
