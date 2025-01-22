@@ -42,10 +42,7 @@ Happy Coding! 🚀👩‍💻👨‍💻
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/VukIG/Cancer-Detection-App.git
-    ```
-
+   
 2. Install dependencies:
 
     ```bash
